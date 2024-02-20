@@ -17,7 +17,7 @@
 # include <unistd.h>
 # include <stddef.h>
 
-int		ft_printf(const char *str, ...);
+int		ft_printf(const char *str, ...)__attribute__ ((format (printf, 1, 2)));
 size_t	ft_putad(unsigned long ptr);
 size_t	ft_putu(unsigned int ptr);
 size_t	ft_puthexa(unsigned int ptr, char *base);
